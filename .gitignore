@@ -1,0 +1,22 @@
+# Python bytecode (זבל של פייתון)
+__pycache__/
+*.py[cod]
+
+# Virtual Environment (הסביבה שלך - לא מעלים ל-Git!)
+.venv/
+.env/
+env/
+venv/
+
+# PyInstaller / Build (תוצרי הבנייה של ה-EXE)
+build/
+dist/
+*.spec
+
+# PyCharm / IDE (הגדרות אישיות של העורך)
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
