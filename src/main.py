@@ -3,7 +3,20 @@ from tkinter import filedialog, ttk, messagebox
 from PIL import Image, ImageTk
 import os
 from datetime import datetime
+import logging
+import sys
 
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout), # שולח טקסט ל-Console למטה
+        logging.FileHandler("app_debug.log") # שומר עותק בקובץ
+    ]
+)
+logger = logging.getLogger(__name__)
+
+logger.info("--- Image Presenter System Started ---")
 
 class ImagePresenter:
     def __init__(self, root):
